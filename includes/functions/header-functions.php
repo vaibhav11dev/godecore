@@ -177,20 +177,6 @@ if ( !function_exists( 'vedanta_header_search' ) ) :
 		if ( $search_type == 'product' ) {
 			$post_type_html = '<input type="hidden" name="post_type" value="product">';
 		}
-		$words_html = array();
-
-		if ( intval( vedanta_get_option( 'header_hot_words_enable' ) ) ) {
-			$hot_words = vedanta_get_option( 'header_hot_words' );
-			if ( $hot_words ) {
-				$words_html[] = '<ul class="hot-words">';
-				foreach ( $hot_words as $word ) {
-					if ( isset( $word[ 'text' ] ) && !empty( $word[ 'text' ] ) ) {
-						$words_html[] = sprintf( '<li><a href="%s">%s</a></li>', esc_url( $word[ 'link' ] ), $word[ 'text' ] );
-					}
-				}
-				$words_html[] = '</ul>';
-			}
-		}
 
 		$lang = defined( 'ICL_LANGUAGE_CODE' ) ? ICL_LANGUAGE_CODE : false;
 		if ( $lang ) {
@@ -232,22 +218,28 @@ if ( !function_exists( 'vedanta_header_search' ) ) :
 		}
 
 		$items .= sprintf(
-		'<div id="_desktop_search"><div class="top-search-wrap %s"><div class="product-extra-search %s">
-                <form class="products-search" method="get" action="%s">
-                    <div class="psearch-content">
-			            <div class="search-wrapper">
-                            <input type="text" name="s"  class="search-field" autocomplete="off" placeholder="%s">
-                            %s                            
-                        </div>
-						%s
-                        <button type="submit" class="search-submit">%s</button>
-                    </div>
-                </form>
-                %s
-		</div>
-                %s
-                ', 
-		$search_box_bg, $search_shape_class, esc_url( home_url( '/' ) ), esc_html( $search_text ), $post_type_html, $product_categories, $search_icon, implode( ' ', $words_html ), $search_results
+		'<div id="_desktop_search">
+			<div class="top-search-wrap %s">
+				<div class="product-extra-search %s">
+					<form class="products-search" method="get" action="%s">
+						<div class="psearch-content">
+							<div class="search-wrapper">
+								<input type="text" name="s"  class="search-field" autocomplete="off" placeholder="%s">
+								<div class="search_label">
+									<div class="search_label-text">
+									</div>
+								</div>
+								%s                            
+							</div>
+							%s
+							<button type="submit" class="search-submit">%s</button>
+						</div>
+					</form>
+				</div>
+				%s
+			</div>
+		</div>', 
+		$search_box_bg, $search_shape_class, esc_url( home_url( '/' ) ), esc_html( $search_text ), $post_type_html, $product_categories, $search_icon, $search_results
 		);
 
 		echo $items; // PHPCS:Ignore WordPress.Security.EscapeOutput.OutputNotEscaped

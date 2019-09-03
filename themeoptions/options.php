@@ -495,11 +495,11 @@ Redux::setSection( $ved_options, array(
 			'compiler'	 => true,
 			'type'		 => 'image_select',
 			'options'	 => array(
-				// 'h1'	 => GODECORE_IMAGEFOLDER . '/header/header1.jpg',
-				// 'h2'	 => GODECORE_IMAGEFOLDER . '/header/header2.jpg',
+				'h1'	 => GODECORE_IMAGEFOLDER . '/header/header1.jpg',
+				'h2'	 => GODECORE_IMAGEFOLDER . '/header/header2.jpg',
 				'h3'	 => GODECORE_IMAGEFOLDER . '/header/header3.jpg',
-				// 'h4'	 => GODECORE_IMAGEFOLDER . '/header/header4.jpg',
-				// 'h5'	 => GODECORE_IMAGEFOLDER . '/header/header5.jpg',
+				'h4'	 => GODECORE_IMAGEFOLDER . '/header/header4.jpg',
+				'h5'	 => GODECORE_IMAGEFOLDER . '/header/header5.jpg',
 			),
 			'title'		 => esc_html__( 'Choose Header Type', 'godecore' ),
 			'default'	 => 'h1',
@@ -1985,6 +1985,41 @@ Redux::setSection( $ved_options, array(
 					'title' => esc_html__('Icon Top Right', 'godecore' ),
 					'img' => esc_url(GODECORE_IMAGEFOLDER.'/product_hover_style/icon-top-left.jpg'),
 				),				
+				'image-center' => array(
+					'alt' => esc_html__('Image Center', 'godecore' ),
+					'title' => esc_html__('Image Center', 'godecore' ),
+					'img' => esc_url(GODECORE_IMAGEFOLDER.'/product_hover_style/image-center.jpg'),
+			),
+				'image-left' => array(
+					'alt' => esc_html__('Image Left', 'godecore' ),
+					'title' => esc_html__('Image Left', 'godecore' ),
+					'img' => esc_url(GODECORE_IMAGEFOLDER.'/product_hover_style/image-left.jpg'),
+				),
+				'image-bottom' => array(
+					'alt' => esc_html__('Image Bottom', 'godecore' ),
+					'title' => esc_html__('Image Bottom', 'godecore' ),
+					'img' => esc_url(GODECORE_IMAGEFOLDER.'/product_hover_style/image-bottom.jpg'),
+				),
+				'image-bottom-2' => array(
+					'alt' => esc_html__('Image Bottom 2', 'godecore' ),
+					'title' => esc_html__('Image Bottom 2', 'godecore' ),
+					'img' => esc_url(GODECORE_IMAGEFOLDER.'/product_hover_style/image-bottom-2.jpg'),
+				),
+				'image-bottom-bar' => array(
+					'alt' => esc_html__('Image Bottom Bar', 'godecore' ),
+					'title' => esc_html__('Image Bottom Bar', 'godecore' ),
+					'img' => esc_url(GODECORE_IMAGEFOLDER.'/product_hover_style/image-bottom-bar.jpg'),
+				),
+				'info-bottom' => array(
+					'alt' => esc_html__('Info Bottom', 'godecore' ),
+					'title' => esc_html__('Info Bottom', 'godecore' ),
+					'img' => esc_url(GODECORE_IMAGEFOLDER.'/product_hover_style/info-bottom.jpg'),
+				),
+				'info-bottom-bar' => array(
+					'alt' => esc_html__('Info Bottom Bar', 'godecore' ),
+					'title' => esc_html__('Info Bottom Bar', 'godecore' ),
+					'img' => esc_url(GODECORE_IMAGEFOLDER.'/product_hover_style/info-bottom-bar.jpg'),
+				),
 			),
 			'default' => 'image-center',
 		), 
@@ -3043,7 +3078,6 @@ Redux::setSection( $ved_options, array(
 			),
 			'required'     => array( 'ved_enable_maintenance', '=', '1' ),
 		),
-
 		array(
 			'id'         => 'ved_maintenance_text_color',
 			'type'       => 'color',

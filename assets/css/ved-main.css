@@ -3132,7 +3132,8 @@ body .btn.btn-hovered:hover{
 
 .pagination > li {
     display: inline-block;
-    margin-left: 5px;    
+    margin-left: 5px;
+    float: left;
 }
 
 .pagination > li > a,
@@ -3604,7 +3605,7 @@ body .btn.btn-hovered:hover{
 .dddemo2 .header-social > li > a {
     font-size:16px; 
 }
-.menu-topbar-container,.menu-topbar-container > ul > li {
+.top-bar-list > li {
     display: inline-block;
     vertical-align: middle;
     position: relative;    
@@ -3639,7 +3640,7 @@ body .btn.btn-hovered:hover{
 .list-dividers li:not(:last-child) a {
     padding-right: 15px;  
 }
-.menu-topbar-container li a{
+.top-bar-list li a{
 	display: block;
 }
 .language .drop-content {
@@ -5527,9 +5528,9 @@ ul.nav-menu .ved-megamenu-menu li:hover .widget-content ul {
 [Blog]
 */
 
-/*.post {
-    margin: 0 0 70px;
-}*/
+.post-nav-links {
+    clear: both;
+}
 
 .post .post-content,
 .single-post .post-content{

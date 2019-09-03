@@ -1817,6 +1817,7 @@ ul.page-numbers li > span, ul.page-numbers li > a {
     position: absolute;
     text-align: center;
     right:10px;
+    left: auto;
     top:10px;
     z-index: 3; 
     font-weight: 400;
@@ -1839,6 +1840,15 @@ ul.page-numbers li > span, ul.page-numbers li > a {
     right: 25px;
     opacity: 1;
 }
-.list .product .product-thumbnail .product-thumbnail-main .hot-sale-wrapper .onsale {right:10px;}
-.list .product .product-thumbnail .product-thumbnail-main .hot-sale-wrapper .featured {right:-40px;}
-.products li.product:hover .product-thumbnail .product-thumbnail-main .hot-sale-wrapper .featured{right:10px;}
+.list li.product:hover .product-thumbnail .product-thumbnail-main .hot-sale-wrapper .onsale {
+    opacity: 0;
+}
+.list .product .product-thumbnail .product-thumbnail-main .hot-sale-wrapper .onsale {
+    right:10px;
+}
+.list .product .product-thumbnail .product-thumbnail-main .hot-sale-wrapper .featured {
+    right:-40px;
+}
+.products li.product:hover .product-thumbnail .product-thumbnail-main .hot-sale-wrapper .featured{
+    right:10px;
+}

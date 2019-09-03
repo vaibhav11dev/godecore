@@ -762,7 +762,7 @@ function vedanta_woocommerce_taxonomy_archive() {
 //			echo'<h1 class="h1">' . esc_html( $cat->name ) . '</h1>';
 //		}
 		if ( $cat && !empty( $cat->term_id ) ) {
-			$thumbnail_id	 = get_woocommerce_term_meta( $cat->term_id, 'thumbnail_id', true );
+			$thumbnail_id	 = get_term_meta( $cat->term_id, 'thumbnail_id', true );
 			$image			 = wp_get_attachment_url( $thumbnail_id );
 			echo '<img class="cat-img" src=' . esc_url( $image ) . ' alt=' . esc_attr( $cat->name ) . '/>';
 		}
