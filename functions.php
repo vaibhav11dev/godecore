@@ -29,10 +29,10 @@ function vedanta_scripts() {
     wp_enqueue_style( 'slick', get_template_directory_uri() . '/assets/slick/slick.css' );
 
     //Theme Core CSS
-    $ved_demo_style = vedanta_get_option( 'ved_demo_style', 'dddemo1' );
+    $ved_demo_style = vedanta_get_option( 'ved_demo_style', 'veddemo1' );
     wp_enqueue_style( 'ved-main', get_template_directory_uri() . '/assets/css/ved-main.css' );
     wp_enqueue_style( 'wooshop', get_template_directory_uri() . '/assets/css/wooshop.css' );
-	wp_enqueue_style( 'dddemo', get_template_directory_uri() . '/assets/css/'.$ved_demo_style.'.css' );
+	wp_enqueue_style( 'veddemo', get_template_directory_uri() . '/assets/css/'.$ved_demo_style.'.css' );
     wp_enqueue_style( 'dynamic-style', get_template_directory_uri() . '/assets/css/dynamic.css' );
 
     //Theme Dynamic CSS
@@ -60,15 +60,15 @@ function vedanta_scripts() {
     wp_enqueue_script( 'slick-js', get_template_directory_uri() . '/assets/slick/slick.min.js', array( 'jquery' ), '1.0', true );
 
     $header_type = vedanta_get_option( 'ved_header_type' );
-	$ved_header_type		 = vedanta_get_option( 'ved_header_type' );
+	$ved_header_width		 = vedanta_get_option( 'ved_header_width' );
 	$ved_woo_items		 = vedanta_get_option( 'ved_woo_items' );
     wp_localize_script( 'ved-main', 'vedantaData', array(
         'ajax_url'            => admin_url( 'admin-ajax.php' ),
         'nonce'               => wp_create_nonce( '_vedanta_nonce' ),
         'search_content_type' => vedanta_get_option( 'ved_search_content_type' ),
         'ajax_search'         => intval( vedanta_get_option( 'ved_header_ajax_search' ) ),
-        'headertype' => $header_type,
-        'header_width' => $ved_header_type,
+        'header_type' => $header_type,
+        'header_width' => $ved_header_width,
 		'woo_items' => $ved_woo_items,
     ) );
 }

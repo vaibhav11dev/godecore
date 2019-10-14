@@ -733,9 +733,9 @@ a:focus,
 .ved-woo-cats-slider.style1 .cat-item .cat_btn:hover,
 body .btn-hovered.elementor-widget-button .elementor-button,
 .products .open-quick-view,
-.dddemo1 .sec-head-style .text-title:before,.dddemo1 .wishlist-title h2:before,.dddemo1 .sec-head-style .text-title:after,.dddemo1 .wishlist-title h2:after,
-.dddemo1 .before-footer,
-.dddemo1 .footer-center .widget_nav_menu .menu > li > a:before,.dddemo1 .footer-center .widget_nav_menu .sub-menu > li > a:before{
+.veddemo1 .sec-head-style .text-title:before,.veddemo1 .wishlist-title h2:before,.veddemo1 .sec-head-style .text-title:after,.veddemo1 .wishlist-title h2:after,
+.veddemo1 .before-footer,
+.veddemo1 .footer-center .widget_nav_menu .menu > li > a:before,.veddemo1 .footer-center .widget_nav_menu .sub-menu > li > a:before{
     background: ' . esc_attr($ved_primary_color) . ';
 }
 .search-bg-theme .products-search .product-cat-dd{
@@ -789,8 +789,8 @@ body .btn-hovered.elementor-widget-button .elementor-button,
 .page-search article .entry-meta .read-more:hover,
 input[type="checkbox"] + label:after, input[type="checkbox"] + span:after, .newsletter_show_again:after,
 #search_popup .modal-header button:hover,
-.dddemo1 .footer .copyright a:hover,.dddemo1 .footer .copyright a:focus,
-.dddemo1 .before-footer .news-blocks .title-text .icon,
+.veddemo1 .footer .copyright a:hover,.veddemo1 .footer .copyright a:focus,
+.veddemo1 .before-footer .news-blocks .title-text .icon,
 .header-2 #_desktop_search .icon-wrap:hover,
 .ved-woo-cat-tab.style1 .product-action a:hover,
 .products .product-name a:hover,
@@ -841,7 +841,7 @@ body .elementor-button:hover,
 input[type="radio"] + label:after, input[type="radio"] + span:after,
 button[type=submit]:hover,
 .vedanta-slider .slides .owl-nav > button,
-.dddemo1 .footer .social-icons > li > a:hover,
+.veddemo1 .footer .social-icons > li > a:hover,
 .style3 .ved-post-link a.btn.btn-base:hover,
 .products.list li.product .product-info .product-actions .product-action-add-to-cart a{
     background-color: ' . esc_attr($ved_primary_color) . ';
@@ -928,7 +928,7 @@ input[type="radio"] + label:before, input[type="radio"] + span:before, input[typ
 .products.list .product .product-info .product-actions .product-action-add-to-cart a,
 .vedanta-slider .slides .owl-nav > button:hover,
 .style1 .ved-post-item .ved-post-preview .meta_date,
-.dddemo1 .before-footer .mc4wp-form .btn:hover,
+.veddemo1 .before-footer .mc4wp-form .btn:hover,
 .menu-horizontal .mc4wp-form-fields .btn.btn-base,
 .mc4wp-form-fields .btn.btn-base,
 .style3 .ved-post-link a.btn.btn-base,

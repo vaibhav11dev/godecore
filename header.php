@@ -58,7 +58,7 @@
 	</head>
 
 	<?php 
-		$ved_demo_style = vedanta_get_option( 'ved_demo_style', 'dddemo1' ); 
+		$ved_demo_style = vedanta_get_option( 'ved_demo_style', 'veddemo1' ); 
 		$body_layout_class = vedanta_get_option( 'ved_width_layout' );  
 		$body_product_border_class = vedanta_get_option( 'ved_product_border_type' );  
 		$body_class = $ved_demo_style.' '.$body_layout_class.' '.$body_product_border_class;
