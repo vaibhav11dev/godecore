@@ -1832,9 +1832,10 @@ ul.page-numbers li > span, ul.page-numbers li > a {
     top: 0px;
     background:#fa4546;
     padding:5px 15px;
-    top:10px; 
+    top:10px;
+    z-index:10;  
     right:-40px;
-    opacity:0; 
+    opacity:0;
 }
 .products li.product:hover .product-thumbnail .product-thumbnail-main .hot-sale-wrapper .featured{
     right: 25px;

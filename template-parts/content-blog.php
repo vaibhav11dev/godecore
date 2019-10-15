@@ -12,15 +12,6 @@ $wp_query		 = new WP_Query();
 $default_posts_per_page	 = get_option( 'posts_per_page', 6 );
 $wp_query->query( "posts_per_page=$default_posts_per_page&paged=$paged" );
 
-// this code only for preview purpose
-if (isset($_GET[ 'style' ])) {
-    $ved_options[ 'ved_blog_style' ] = $_GET[ 'style' ];
-}
-if (isset($_GET[ 'layout' ])) {
-    $ved_options[ 'ved_post_layout' ] = $_GET[ 'layout' ];
-}
-
-
 if ( $wp_query->have_posts() ) :
 	if ( $ved_options[ 'ved_blog_style' ] == 'grid' ) {
 		?>

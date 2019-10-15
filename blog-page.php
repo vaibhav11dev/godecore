@@ -16,11 +16,6 @@ global $ved_options;
 	<div class="row">
 
 	    <?php
-            // this code only for preview purpose
-            if (isset($_GET[ 'style' ])) {
-                $ved_options[ 'ved_blog_style' ] = $_GET[ 'style' ];
-            }
-
 	    $thumbnail = '';
 	    if ( $ved_options[ 'ved_blog_style' ] == 'thumbnail_on_side' ) {
 		    $thumbnail = ' post-thumbnail ';
